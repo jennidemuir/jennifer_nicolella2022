@@ -20,7 +20,8 @@ export const InfoContainer = styled.div`
 
   @media screen and (max-width: 1000px) {
     padding: 2rem 0;
-    height: 1100px;
+    max-height: 1100px;
+    height: 100%;
   }
 
   @media screen and (max-width: 480px) {
@@ -41,41 +42,50 @@ export const InfoWrapper = styled.div`
 `
 
 export const InfoRow = styled.div`
-  display: grid;
+  /* display: grid;
   grid-auto-columns: minmax() (auto, 1fr);
+  align-items: center; */
+  flex-direction: ${({ imgStart }) =>
+    imgStart ? `row-reverse` : `row`};
+  display: flex;
+  justify-content: center;
   align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
 
   @media screen and (max-width: 1000px) {
-    grid-template-areas: "col2" "col1";
+    /* grid-template-areas: "col2" "col1"; */
+
+    flex-direction: column;
+    justify-content: flex-start;
   }
 `;
 
 export const Column1 =styled.div`
-    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
     padding: 0 15px;
-    grid-area: col1;
+    /* grid-area: col1; */
 `
 
 export const Column2 = styled.div`
-  /* margin-bottom: 15px; */
+  margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col2;
+  /* grid-area: col2; */
 `
 
 export const TextWrapper =styled.div`
     max-width: 700px;
     padding-top: 25px;
     padding-bottom: 1rem;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     text-align: center;
 `
 
 export const TopLine = styled.p`
-  color: ${({lightBg}) => (lightBg ? topLineDrkColor : topLineLghtColor)};
+  color: ${({ lightBg }) => (lightBg ? topLineDrkColor : topLineLghtColor)};
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -83,8 +93,9 @@ export const TopLine = styled.p`
   text-transform: uppercase;
   padding-bottom: 3rem;
   margin-bottom: 16px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1000px) {
     padding-bottom: 1rem;
+    font-size: 14px;
   }
 `;
 
@@ -101,11 +112,16 @@ export const Heading = styled.h1`
 `
 
 export const Subtitle = styled.p`
-  max-width: 600px;
+  /* max-width: 600px; */
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? darkTxtColor : lightTxtColor)};
+
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 `;
 
 export const BtnWrap = styled.div`
@@ -118,10 +134,10 @@ export const ImgWrap = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
-  max-width: 600px;
+  max-width: ${({ vertImage }) => (vertImage ? "300px" : "600px")};
   height: 100%;
   @media screen and (max-width: 1000px) {
-    max-width: ${({ vertImage }) => (vertImage ? "200px" : "500px")};
+    max-width: ${({ vertImage }) => (vertImage ? "135px" : "500px")};
   }
 `;
 
