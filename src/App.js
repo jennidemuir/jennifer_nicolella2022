@@ -7,7 +7,7 @@ import ContactPage from './Pages/ContactPage.js'
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename='/'>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/contact" element={<ContactPage/>} />
