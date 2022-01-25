@@ -137,7 +137,10 @@ export const ImgWrap = styled.div`
   max-width: ${({ vertImage }) => (vertImage ? "300px" : "600px")};
   height: 100%;
   @media screen and (max-width: 1000px) {
-    max-width: ${({ vertImage }) => (vertImage ? "135px" : "500px")};
+    max-width: ${({ vertImage }) => (vertImage ? "200px" : "500px")};
+  }
+  @media screen and (max-width: 480px) {
+    max-width: ${({ vertImage }) => (vertImage ? "150px" : "400px")};
   }
 `;
 

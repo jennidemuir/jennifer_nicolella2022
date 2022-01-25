@@ -9,6 +9,8 @@ import {
   ContactH1,
   HomeBtn,
   HomeBtnLink,
+
+  // ContactImg
 } from "./ContactFormElements";
 
 const ContactForm = () => {
@@ -18,8 +20,13 @@ const ContactForm = () => {
         <HomeBtnLink to="/">Home</HomeBtnLink>
       </HomeBtn>
 
+
+        {/* <ContactImg src={require("../../Media/horseskissing.jpg")} /> */}
+
+
       <FormWrapper>
         <ContactH1>Jennifer Nicolella</ContactH1>
+
         <Form
           id="contactForm"
           action="https://getform.io/f/d9f2d70f-9cf8-438e-a2ad-ae678bb083b9"

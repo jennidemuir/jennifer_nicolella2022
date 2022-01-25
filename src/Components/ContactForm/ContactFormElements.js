@@ -10,6 +10,7 @@ export const ContactWrapper = styled.div`
   background-color: #0e0e52;
   display: flex;
   flex-direction: column;
+
 `;
 
 export const HomeBtn = styled.nav`
@@ -51,6 +52,26 @@ export const FormWrapper = styled.div`
   align-items: center;
 `;
 
+
+// export const ContactImg = styled.img`
+//   position: absolute;
+//   right: 50%;
+//   top: 50%;
+//   transform: translate(50%, -50%);
+//   max-width: 1000px;
+//   height: auto;
+//   /* margin: 0 0 10px 0; */
+//   padding-right: 0;
+//   opacity: 0.75;
+//   @media screen and (max-width: 1000px) {
+//     max-width: 700px;
+//   }
+//   @media screen and (max-width: 480px) {
+//     max-width: 500px;
+
+//   }
+// `;
+
 export const ContactH1 = styled.h1`
   color: #f3f9f0;
   padding-bottom: 1.5rem;
@@ -72,6 +93,7 @@ export const FormInput = styled.input`
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  /* background-color: rgba(0, 0, 0, 0.5); */
 `;
 
 export const FormTextArea = styled.textarea`
@@ -83,6 +105,7 @@ export const FormTextArea = styled.textarea`
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  /* background-color: rgba(0, 0, 0, 0.5); */
 `;
 
 export const FormBtn = styled.button`
