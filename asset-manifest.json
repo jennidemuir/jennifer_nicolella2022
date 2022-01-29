@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jennifer_nicolella2022/static/css/main.206254f4.css",
-    "main.js": "/jennifer_nicolella2022/static/js/main.eb7fca6f.js",
+    "main.js": "/jennifer_nicolella2022/static/js/main.a1c1b71a.js",
     "static/media/horsevid1.mp4": "/jennifer_nicolella2022/static/media/horsevid1.1a2165b0a8bd2bf3a5bd.mp4",
     "static/media/CU1.jpg": "/jennifer_nicolella2022/static/media/CU1.db8d40e9e744c67f0f70.jpg",
     "static/media/cow.jpg": "/jennifer_nicolella2022/static/media/cow.959aba8a69b45494d0cf.jpg",
@@ -11,10 +11,10 @@
     "static/media/dog-color.png": "/jennifer_nicolella2022/static/media/dog-color.1b6a0e203aa8494f0e56.png",
     "index.html": "/jennifer_nicolella2022/index.html",
     "main.206254f4.css.map": "/jennifer_nicolella2022/static/css/main.206254f4.css.map",
-    "main.eb7fca6f.js.map": "/jennifer_nicolella2022/static/js/main.eb7fca6f.js.map"
+    "main.a1c1b71a.js.map": "/jennifer_nicolella2022/static/js/main.a1c1b71a.js.map"
   },
   "entrypoints": [
     "static/css/main.206254f4.css",
-    "static/js/main.eb7fca6f.js"
+    "static/js/main.a1c1b71a.js"
   ]
 }
